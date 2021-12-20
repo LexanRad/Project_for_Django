@@ -1,0 +1,47 @@
+[
+   {
+      "category": 3,
+      "name": "Лампа \"Сфера\"",
+      "image": "products_imgs/product-1.jpg",
+      "short_desc": "Уникальный дизайн",
+      "description": "Привнесите свет в ваш тусклый офис!",
+      "price": "3500.00",
+      "quantity": 10
+    },
+  {
+      "category": 3,
+      "name": "Стул \"Сан-Диего\"",
+      "image": "products_imgs/product-4.jpg",
+      "short_desc": "Стильное решение",
+      "description": "Удобный стул для гостей",
+      "price": "4590.00",
+      "quantity": 12
+  },
+  {
+      "category": 1,
+      "name": "Диван \"Фаэтон\"",
+      "image": "products_imgs/product-3-sm.jpg",
+      "short_desc": "Удобный диван",
+      "description": "Расположитесь с комфортом",
+      "price": "21000.00",
+      "quantity": 5
+  },
+  {
+      "category": 4,
+      "name": "Стулья \"Карно\"",
+      "image": "products_imgs/product-2.jpg",
+      "short_desc": "Интересный дизайн",
+      "description": "Порадуйтесь необычным дизайном, совмещенным с комфортом",
+      "price": "7000.00",
+      "quantity": 8
+  },
+  {
+      "category": 2,
+      "name": "Лампа \"Кохэль\"",
+      "image": "products_imgs/product-5-sm.jpg",
+      "short_desc": "Создайте уют",
+      "description": "Уютная лампа для потолка",
+      "price": "7000.00",
+      "quantity": 13
+  }
+]
