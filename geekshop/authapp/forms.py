@@ -10,7 +10,7 @@ class ShopUserLoginForm(AuthenticationForm):
         fields = ('username', 'password')
 
     def __init__(self, *args, **kwargs):
-        super(ShopUserLoginForm, self).__init__()
+        super(ShopUserLoginForm, self).__init__(*args, **kwargs)
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'form_control'
 
@@ -21,7 +21,7 @@ class ShopUserRegisterForm(UserCreationForm):
         fields = ('username', 'first_name', 'password1', 'password2', 'email', 'age', 'avatar')
 
     def __init__(self, *args, **kwargs):
-        super(ShopUserRegisterForm, self).__init__()
+        super(ShopUserRegisterForm, self).__init__(*args, **kwargs)
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'form_control'
 

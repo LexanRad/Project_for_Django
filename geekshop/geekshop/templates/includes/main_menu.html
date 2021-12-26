@@ -6,7 +6,7 @@
     {% if user.is_authenticated %}
         <li>
             <a href="{% url 'auth:edit' %}">
-                {{user.first_name|default:'Пользователь' }}
+                {{ user.first_name|default:'Пользователь' }}
             </a>
         </li>
     {% endif %}
@@ -17,12 +17,15 @@
             <a href="{% url 'auth:login' %}">войти</a>
             {% endif %}
         </li>
-    <li>
-        <a href="{% url 'basket:index' %}" class="basket">
-            <span>
-                {% if basket %} {{ basket|length }} {% endif %}
-            </span>
-        </a>
-    </li>
+    {% if basket %}
+        <li>
+            <a href="{% url 'basket:index' %}" class="basket">
+                <span>
+                    {{ basket.0.total.cost|floatformat:0 }} руб
+                    ({{ basket.0.total_quantity }} шт)
+                </span>
+            </a>
+        </li>
+    {% endif %}
 </ul>
 <a href="#" class="search"></a>
