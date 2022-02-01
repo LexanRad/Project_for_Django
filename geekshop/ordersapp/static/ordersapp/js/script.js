@@ -65,6 +65,10 @@ window.onload = function () {
        prefix: 'orderitems',
        removed: deleteOrderItem
     });
+    $('.add-row').on('click', function () {
+        quantity_arr.push(0);
+        price_arr.push(0);
+    })
 
     if(!order_total_quantity){
         orderSummaryRecalc();
