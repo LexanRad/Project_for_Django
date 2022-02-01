@@ -12,7 +12,7 @@ from django.contrib.auth.decorators import login_required
 @login_required
 def basket(request):
     title = 'корзина'
-    basket_items = Basket.objects.filter(user=request.user).order_by('product_category')
+    basket_items = Basket.objects.filter(user=request.user).order_by('product_category').select_related()
     context = {
         'title': title,
         'basket_items': basket_items,
